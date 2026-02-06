@@ -1,0 +1,133 @@
+.footer {
+    background: #f4f4f4;
+    padding: 60px 20px 40px;
+    font-family: Arial, sans-serif;
+    color: #1f2a2e;
+}
+
+.footer-container {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* LEFT */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.logo-icon {
+    font-size: 20px;
+}
+
+.store-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 30px;
+}
+
+.store-btn {
+    background: #10292f;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+/* RIGHT */
+.footer-right {
+    display: flex;
+    gap: 100px;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    font-size: 16px;
+}
+
+.footer-col a {
+    cursor: pointer;
+}
+
+.badge {
+    background: #dff1ea;
+    color: #2a7d67;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-left: 6px;
+}
+
+/* DIVIDER */
+.footer-divider {
+    height: 1px;
+    background: #ddd;
+    margin: 40px 0;
+}
+
+/* BOTTOM */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.legal {
+    max-width: 760px;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #6b7a80;
+}
+
+.privacy {
+    align-self: flex-end;
+    font-size: 14px;
+    color: #6b7a80;
+    cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-right {
+        gap: 40px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .privacy {
+        align-self: flex-start;
+    }
+}
