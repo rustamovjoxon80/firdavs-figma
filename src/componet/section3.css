@@ -1,0 +1,154 @@
+.Simple{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 100px 0;
+}
+.Simple h1{
+    font-family: Roboto;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    color: #142A31;
+}
+.Simple pre{
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 24.36px;
+    letter-spacing: 0%;
+    text-align: center; 
+    color: #142A31;
+}
+.s-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 88px;
+    justify-content: center;
+}
+.s-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+}
+.s-img{
+    width: 300px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+}
+.s-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 17px;
+}
+.s-text h3{
+    font-family: Roboto;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 21px;
+    line-height: 24.96px;
+    letter-spacing: 0%;
+    color: #142A31;
+}
+.s-text p{
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #142A31;
+}
+
+
+@media (max-width:992px) {
+    .Simple h1{
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .Simple pre{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .s-text{
+        gap: 15px;
+    }
+    .s-text h3{
+        font-size: 19px;
+        line-height: 18px;
+    }
+    .s-text p{
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .s-img{
+        width: 270px;
+        height: 300px;
+    }
+}
+@media (max-width:768px) {
+    .Simple h1{
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .Simple pre{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .s-text{
+        gap: 13px;
+    }
+    .s-text h3{
+        font-size: 17px;
+        line-height: 14px;
+    }
+    .s-text p{
+        font-size: 11px;
+        line-height: 16px;
+    }
+    .s-img{
+        width: 230px;
+        height: 250px;
+    }
+}
+@media (max-width:480px) {
+    .Simple h1{
+        font-size: 28px;
+        line-height: 28px;
+        text-align: center;
+    }
+    .Simple pre{
+        font-size: 10px;
+        line-height: 12px;
+        text-align: center;
+    }
+    .s-text{
+        gap: 11px;
+    }
+    .s-text h3{
+        font-size: 15px;
+        line-height: 12px;
+    }
+    .s-text p{
+        font-size: 9px;
+        line-height: 14px;
+    }
+    .s-img{
+        width: 220px;
+        height: 220px;
+    }
+}

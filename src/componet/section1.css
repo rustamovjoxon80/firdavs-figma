@@ -1,0 +1,127 @@
+.Final{
+    width: 100%;
+    height: auto;
+    background-color: #F3F8F3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 70px 0 0 50px ;
+}
+.final-text{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.final-text h1{
+    font-family: Roboto;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 64px;
+    line-height: 70.4px;
+    letter-spacing: 0%;
+    letter-spacing: 0%;
+    color: #142A31;
+}
+.final-text p{
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 24.36px;
+    letter-spacing: 0%;
+    color: #142A31;
+}
+
+.final-img{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 45%;
+    height: auto;
+    border-top-left-radius: 50px;
+    background-color: #142A31;
+    overflow: hidden;
+}
+
+.final-img img{
+    width: 70%;
+    position: relative;
+    top: 75px;
+}
+.final-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+}
+.final-btn button{
+    width: 250px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #142A31;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    font-size: 20px;
+}
+.final-btn .google{
+    width: 250px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #142A31;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    font-size: 20px;
+}
+.final-btn button p{
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .Final {
+        flex-direction: column; 
+        padding: 40px 20px 0 20px; 
+        text-align: center; 
+    }
+
+    .final-text {
+        gap: 20px;
+        margin-bottom: 40px; 
+    }
+
+    .final-text h1 {
+        font-size: 36px; 
+        line-height: 40px;
+    }
+
+    .final-btn {
+        align-items: center; 
+    }
+
+    .final-btn button, 
+    .final-btn .google {
+        width: 100%; 
+        max-width: 280px;
+    }
+
+    .final-img {
+        width: 100%; 
+        border-top-left-radius: 30px; 
+        border-top-right-radius: 30px;
+    }
+
+    .final-img img {
+        width: 85%; 
+        top: 40px; 
+    }
+}

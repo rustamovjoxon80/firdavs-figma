@@ -1,0 +1,101 @@
+.Personal{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 100px 0;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.per-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.per-card h3{
+    font-family: Roboto;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #142A31;
+}
+.info{
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+.info p{
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #101828;
+}
+@media (max-width:992px) {
+    
+    .Personal{
+        gap: 50px;
+        justify-content: center ;
+    }
+    .per-card h3{
+        font-size: 18px;
+    }
+    .info p{
+        font-size: 13px;
+    }
+    .info img{
+        width: 40px;
+    }
+}
+@media (max-width:768px) {
+    
+    .Personal{
+        gap: 50px;
+        justify-content: center ;
+    }
+    .per-card{
+        gap: 30px;
+    }
+    .per-card h3{
+        font-size: 18px;
+    }
+    .info p{
+        font-size: 13px;
+    }
+    .info img{
+        width: 40px;
+    }
+    .info{
+        gap: 17px;
+    }
+}
+
+@media (max-width:480px) {
+    
+    .Personal{
+        gap: 50px;
+        justify-content: center ;
+    }
+    .per-card{
+        gap: 30px;
+    }
+    .per-card h3{
+        font-size: 13px;
+    }
+    .info p{
+        font-size: 9px;
+    }
+    .info img{
+        width: 30px;
+    }
+    .info{
+        gap: 15px;
+    }
+}

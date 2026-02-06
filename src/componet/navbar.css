@@ -1,0 +1,66 @@
+header{
+    width: 100%;
+    height: auto;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+li a{
+    text-decoration: none;
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #142A31;
+}
+nav button{
+    font-family: Roboto;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 15px;
+    line-height: 22.8px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #142A31;
+    background-color: #FDB0AB;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 128px;
+    box-shadow: 1px 2px 5px #1018280D;
+}
+
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; 
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    ul {
+        flex-direction: column; 
+        gap: 15px;
+        padding: 0;
+    }
+
+    li a {
+        font-size: 18px; 
+    }
+
+    nav button {
+        width: 80%; 
+        padding: 12px 0;
+    }
+}
