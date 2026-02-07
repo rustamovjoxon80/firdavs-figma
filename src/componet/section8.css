@@ -1,0 +1,129 @@
+.section8 {
+  padding: 100px 20px;
+  background-color: #f9fbfb;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+.section8-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section8-main-title {
+  font-size: 52px;
+  color: #1a2b2b;
+  margin-bottom: 80px;
+  font-weight: 600;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  align-items: start;
+}
+
+.step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step-number-box {
+  width: 40px;
+  height: 40px;
+  background-color: #ffb5a7; /* Pushti rangli kvadrat */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(255, 181, 167, 0.3);
+}
+
+.step-number {
+  color: #1a2b2b;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.step-title {
+  font-size: 22px;
+  color: #1a2b2b;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.step-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #4a5a5a;
+  max-width: 280px;
+  margin-bottom: 25px;
+}
+
+/* Tugmalar stili */
+.step-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 220px;
+}
+
+.app-btn {
+  background-color: #1a2b2b;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: opacity 0.2s;
+}
+
+.app-btn:hover {
+  opacity: 0.9;
+}
+
+/* --- Media Queries (Adaptivlik) --- */
+
+@media (max-width: 1024px) {
+  .section8-main-title {
+    font-size: 42px;
+  }
+  .steps-grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 850px) {
+  .steps-grid {
+    grid-template-columns: 1fr; /* Mobil holatda ustma-ust tushadi */
+    gap: 60px;
+  }
+  
+  .step-description {
+    max-width: 400px;
+  }
+  
+  .section8-main-title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section8 {
+    padding: 60px 15px;
+  }
+  
+  .section8-main-title {
+    font-size: 32px;
+  }
+}
