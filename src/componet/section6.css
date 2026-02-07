@@ -1,0 +1,157 @@
+.section6 {
+  padding: 100px 5%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.section6-container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* Matnlar uchun */
+.section6-content {
+  flex: 1;
+}
+
+.section6-badge {
+  display: inline-block;
+  background-color: #1a2b2b;
+  color: #ffb5a7; /* Badge matn rangi */
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.section6-title {
+  font-size: 48px;
+  line-height: 1.2;
+  color: #1a2b2b;
+  margin-bottom: 24px;
+}
+
+.section6-description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #556666;
+  margin-bottom: 20px;
+  max-width: 500px;
+}
+
+/* Karta dizayni */
+.section6-visual {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bank-card {
+  width: 100%;
+  max-width: 440px;
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid #edf2f2;
+}
+
+.bank-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.logo-container {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  /* Ustida oq narsa chiqmasligi uchun foni olib tashlandi */
+  background: transparent; 
+}
+
+.bank-logo-img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.bank-name-group h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #1a2b2b;
+}
+
+.bank-name-group span {
+  font-size: 14px;
+  color: #8c9898;
+}
+
+.card-top-balance {
+  margin-left: auto;
+  font-weight: 600;
+  color: #1a2b2b;
+}
+
+/* Qatorlar */
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #f0f4f4;
+}
+
+.stat-row:last-child {
+  border-bottom: none;
+}
+
+.stat-row .label {
+  color: #556666;
+}
+
+.stat-row .value {
+  font-weight: 600;
+  color: #1a2b2b;
+}
+
+/* --- Media Queries (Adaptivlik) --- */
+
+@media (max-width: 1024px) {
+  .section6-container {
+    gap: 30px;
+  }
+  .section6-title {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section6-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .section6-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section6-visual {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .section6-description {
+    max-width: 100%;
+  }
+}

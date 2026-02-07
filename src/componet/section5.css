@@ -1,0 +1,146 @@
+.section5 {
+  --bg-color: #ffffff;
+  --text-dark: #1a2e35;
+  --text-muted: #6b7c82;
+  --border-color: #23343a;
+  
+  background-color: var(--bg-color);
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.section5__container {
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.section5__cards {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section5__card {
+  background: #fff;
+  border: 1.5px solid var(--border-color);
+  border-radius: 14px;
+  padding: 18px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+}
+
+.section5__card-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.section5__logo-wrapper {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section5__logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.section5__brand {
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: 1.1rem;
+}
+
+.section5__card-right {
+  text-align: right;
+}
+
+.section5__amount {
+  font-weight: 700;
+  color: var(--text-dark);
+  font-size: 1.1rem;
+}
+
+.section5__rounded {
+  font-size: 0.85rem;
+  color: #aeb9bc;
+}
+
+.section5__content {
+  flex: 1.2;
+}
+
+.section5__badge {
+  background-color: var(--text-dark);
+  color: #f7a08d;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.section5__title {
+  font-size: 3.5rem;
+  color: var(--text-dark);
+  margin: 25px 0;
+  line-height: 1.05;
+  font-weight: 500;
+}
+
+.section5__desc {
+  color: var(--text-muted);
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.section5__desc--bold {
+  color: var(--text-dark);
+}
+
+/* --- Media Queries (Responsivlik) --- */
+
+@media (max-width: 992px) {
+  .section5__container {
+    flex-direction: column-reverse; /* Mobilda rasm/kartochkalar pastga tushadi */
+    gap: 50px;
+    text-align: center;
+  }
+
+  .section5__title {
+    font-size: 2.8rem;
+  }
+
+  .section5__card {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .section5 {
+    padding: 40px 15px;
+  }
+
+  .section5__title {
+    font-size: 2.2rem;
+  }
+
+  .section5__desc {
+    font-size: 1rem;
+  }
+}
